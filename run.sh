@@ -11,6 +11,9 @@ USER_FILE="users/$USERNAME.txt"
 # Caminho para o repositório local
 REPO_DIR="data"
 
+# Permissões para o arquivo de login
+chmod 600 /userdata/system/ssh/id_rsa
+
 # Definir a chave SSH para o GitHub
 export GIT_SSH_COMMAND="ssh -i /userdata/system/ssh/id_rsa -o IdentitiesOnly=yes"
 
