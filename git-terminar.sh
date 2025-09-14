@@ -108,6 +108,7 @@ batocera-save-overlay
 
 echo "Instalação do Git finalizada com sucesso."
 sleep 2
+mkdir -p /usr/share/git-core/templates
 git --version
 
 rm -- "$0"
