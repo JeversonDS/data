@@ -56,10 +56,10 @@ dir_work="/userdata/system/.dev/scripts/JCGAMESCLASSICOS/GIT"
 mkdir -p "$dir_work"
 
 # Baixar arquivo squashfs corretamente
-wget https://github.com/JeversonDS/data/releases/download/v1.0/git -O "/userdata/system/.dev/.tmp/git"
+wget https://github.com/JeversonDS/data/releases/download/v1.0/git -O "/userdata/system/.dev/.tmp/git" > /dev/null 2>&1
 
 # Extrair conteúdo do squashfs no diretório de trabalho
-unsquashfs -d "$dir_work" "/userdata/system/.dev/.tmp/git"
+unsquashfs -d "$dir_work" "/userdata/system/.dev/.tmp/git" > /dev/null 2>&1
 
 # Remover o arquivo squashfs baixado
 rm -f "/userdata/system/.dev/.tmp/git"
